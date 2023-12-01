@@ -1,0 +1,109 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    /* This ensures that there is no space around the edges of the browser window */
+}
+
+/* Add this to reset any padding or margin that may be applied to all elements by default */
+* {
+    margin: 0;
+    padding: 0;
+    /* This is a global reset for margin and padding for all elements */
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5BC0EB;
+    height: 6em;
+    padding-right: 20px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin: 0 4em;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-link.active::before {
+    content: ''; /* This is necessary for the pseudo-element to display */
+    position: absolute; /* Position it relative to its parent */
+    top: -2.5em; /* Align to the top of the link */
+    left: 0; /* Align to the left of the link */
+    right: 0; /* Align to the right of the link */
+    height: 10px; /* The thickness of the white bar */
+    background-color: white; /* The color of the bar */
+    z-index: 10; /* Ensure it's above the link text */
+}
+
+/* To position the pseudo-element correctly, the parent element needs to be positioned relative */
+.nav-link {
+    position: relative; /* This is necessary for absolute positioning inside */
+    display: inline-block; /* or block, depending on your layout */
+}
+
+.logo {
+    width: 15em;
+}
+
+
+.profile-icon {
+    width: 3em;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+}
+
+#rankings, #activity-details {
+    flex: 1; /* Assigns equal width to both sections */
+    margin: 1em; /* Adds some space around the sections */
+}
+
+#rankings {
+    display: flex;
+    flex-direction: column;
+}
+
+.ranking-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.ranking-item .rank {
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+.ranking-item img {
+    width: 100px; /* Adjust as needed */
+    margin-right: 1em;
+}
+
+.ranking-item .info h2 {
+    margin: 0;
+}
+
+.ranking-item .info p {
+    margin: 0;
+}
+
+#activity-details {
+    margin-top: 2em;
+}
