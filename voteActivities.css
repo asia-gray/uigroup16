@@ -86,7 +86,7 @@ header ul li a {
     margin: 0;
     display: flex;
     flex-direction: column;
-    border-right: 2px solid black;
+    border-right: 1px solid black;
 }
 
 #your_rankings_title {
@@ -131,7 +131,7 @@ header ul li a {
 .activity_image{
     padding-left: 12em;
     background-image: url("statue.jpg");
-    background-size: contain;
+    background-size: cover;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 }
@@ -152,5 +152,163 @@ header ul li a {
 /** ACTIVITY DETAILS STYLE **/
 
 #activity-details {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#activity-details h1{
+    font-size: 3em;
+    font-weight: lighter;
+    margin-top: 0.3em;
+}
+
+.description_activity_image {
+    min-height: 7em;
+    background-image: url("statue.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image within the div */
+    width: 23em;
+    border-radius: 30px;
     margin-top: 2em;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    /** box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); **/
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box;
+    background-color: #D9D9D9;
+}
+
+.input-group label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.input-group input[type=submit] {
+    width: auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.input-group input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.input-group .half {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+.input-group .half:last-child {
+    margin-right: 0;
+}
+
+.input-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+@media screen and (max-width: 600px) {
+    .input-group .half {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.clear {
+    clear: both;
+}
+
+.vote_container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* stacks children vertically */
+    align-items: center; /* centers children horizontally */
+    gap: 10px; /* adds space between children */
+    color: #5BC0EB;
+}
+
+.activity_view_buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 15em;
+    margin-top: 2em;
+}
+
+.activity_view_buttons button{
+    background-color: #5BC0EB;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/** SLIDER CSS **/
+/** SLIDER CSS **/
+/** SLIDER CSS **/
+/** SLIDER CSS **/
+
+.slidecontainer {
+    width: 50%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    width: 100%; /* Full-width */
+    height: 15px; /* Specified height */
+    border-radius: 5px;
+    background: #39375B; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border-radius: 50%;
+    border: 1px solid;
+    background: white; /* Green background */
+    cursor: pointer; /* Cursor on hover */
 }

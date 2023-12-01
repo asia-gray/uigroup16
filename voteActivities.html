@@ -98,9 +98,52 @@
         </section>
 
         <section id="activity-details">
-            <h1>Statue of Liberty</h1>
-            <p>Activity 5/10</p>
+            <div> <!-- Description Container -->
+                <h1>Statue of Liberty</h1>
+                <center><p>Activity 5/10</p></center>
+                <div class="description_activity_image"></div>
+                <!--<img class="description_activity_image" src="statue.jpg" alt="activity image">-->
+            </div>
             <!-- Activity detail items here -->
+            <div class="form-container">
+                <form action="/submit-your-form">
+                    <div class="input-group">
+                        <div class="half">
+                            <input type="text" placeholder="Cost Per Person">
+                        </div>
+                        <div class="half">
+                            <input type="text" placeholder="Duration">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Location">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Website">
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder="Description + why do you want to do this?"></textarea>
+                    </div>
+                    <!--
+                    <div class="input-group">
+                        <input type="submit" value="Submit">
+                    </div> -->
+                    <div class="clear"></div>
+                </form>
+            </div>
+
+            <div class="vote_container">
+                <h3>Rank how excited you are to do this on your trip!</h3>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="100" class="slider" id="myRange">
+                </div>
+                <p>100% I want to do this!</p>
+            </div>
+
+            <div class="activity_view_buttons">
+                <button class="view_buttons">Previous</button>
+                <button class="view_buttons">Next</button>
+            </div>
         </section>
     </div>
 </body>
