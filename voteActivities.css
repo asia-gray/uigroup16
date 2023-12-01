@@ -69,40 +69,87 @@ header ul li a {
     justify-content: center;
 }
 
-#rankings, #activity-details {
+
+/** RANKINGS STYLE **/
+/** RANKINGS STYLE **/
+/** RANKINGS STYLE **/
+/** RANKINGS STYLE **/
+
+
+#rankings_section, #activity-details {
     flex: 1; /* Assigns equal width to both sections */
     margin: 1em; /* Adds some space around the sections */
+    align-items: center;
 }
 
-#rankings {
+#rankings_section {
+    margin: 0;
     display: flex;
     flex-direction: column;
+    border-right: 2px solid black;
 }
 
-.ranking-item {
+#your_rankings_title {
+    font-size: 3em;
+    font-weight: lighter;
+    margin-top: 0.3em;
+}
+
+#all_rankings{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.ranked_activity{
+    margin-top: 1em;
     margin-bottom: 1em;
+    padding: 0;
+    border: 1px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.ranking-item .rank {
-    font-size: 2em;
-    font-weight: bold;
-    margin-right: 1em;
+.rank{
+    padding: 3em;
+    background-color: #39375B;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    color: white;
 }
 
-.ranking-item img {
-    width: 100px; /* Adjust as needed */
-    margin-right: 1em;
+.short_description{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 1em;
 }
 
-.ranking-item .info h2 {
-    margin: 0;
+.activity_image{
+    padding-left: 12em;
+    background-image: url("statue.jpg");
+    background-size: contain;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
-.ranking-item .info p {
-    margin: 0;
+.activity_time_cost_score_details{
+    list-style: none;
+    display: flex;
+    text-decoration: none;
 }
+
+.activity_time_cost_score_details li {
+    padding-right: 1em;
+}
+
+/** ACTIVITY DETAILS STYLE **/
+/** ACTIVITY DETAILS STYLE **/
+/** ACTIVITY DETAILS STYLE **/
+/** ACTIVITY DETAILS STYLE **/
 
 #activity-details {
     margin-top: 2em;
