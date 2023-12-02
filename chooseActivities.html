@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Choose Activities - TripHarmony</title>
+    <meta name="description" content="Figma htmlGenerator">
+    <meta name="author" content="htmlGenerator">
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="chooseActivities.css">
+
+</head>
+
+<body>
+    <div class=header>
+        <span class="site-header-info">
+            <img src="images/tripharmony_symbol.png" class="site-logo"></img>
+            <span class="site-name">TripHarmony</span>
+        </span>
+
+        <span class="navigation">
+            <span class="nav-button">Trip Details</span>
+            <span class="nav-button">Choose Activities</span>
+            <span class="nav-button">Rank Activities</span>
+            <span class="nav-button">View Itinerary</span>
+            <span class="nav-button">Trip Budget</span>
+        </span>
+
+        <span><img class="user-icon" src="images/person-icon.png"></img></span>
+    </div>
+
+    <div id="content">
+        <div id="first-column">
+            <div id="add-activity">
+                <span class="title">Add Activities </span>
+                <input placeholder="Activity Name" class="input-field" />
+                <div class="input-field-row">
+                    <input class="half-input-field" placeholder="Cost Per Person" />
+                    <input class="half-input-field" placeholder="Duration" />
+                </div>
+
+                <input class="input-field" placeholder="Location" />
+                <input class="input-field" placeholder="Website" />
+                <textarea class="multiline-field" placeholder="Description + why do you want to do this?"></textarea>
+
+                <button id="add-activity-button">Add Activity</button>
+
+
+            </div>
+
+            <div id="suggested-activities">
+                <span class="title">Suggested Activities</span>
+                <div class="activity-row">
+                    <div class="activity-item">
+                        <div class="activity-info">
+                            <span class="activity-title">The Statue of Liberty</span>
+                            <span class="activity-description">Here is a great description of this...</span>
+                            <div class="activity-highlights">
+                                <span class="activity-highlight"><img src="images/clock.png" class="highlight-icon"/>2 hours</span>
+                                <span>$ 20</span>
+                                <span class="activity-highlight"><img src="images/location_pin.png" class="highlight-icon"/>Location</span>
+                            </div>
+                        </div>
+                        <img src="images/rectangle_50.png" class="activity-img"/>
+                    </div>
+                    <button class="plus-button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="second-column">
+            <div id="trip-slider">
+                <button class="slider" id="selected-slider">
+                    <span class="slider-selected-text">Your Activities</span>
+                </button>
+                <button class="slider">
+                    <span class="form-text">Activity Description</span>
+                </button>
+            </div>
+
+            <div class="activity-item">
+                <div class="activity-info">
+                    <span class="activity-title">The Statue of Liberty</span>
+                    <span class="activity-description">Here is a great description of this...</span>
+                    <div class="activity-highlights">
+                        <span class="activity-highlight"><img src="images/clock.png" class="highlight-icon"/>2 hours</span>
+                        <span>$ 20</span>
+                        <span class="activity-highlight"><img src="images/location_pin.png" class="highlight-icon"/>Location</span>
+                    </div>
+                </div>
+                <img src="images/rectangle_50.png" class="activity-img"/>
+            </div>
+            <div class="activity-item">
+                <div class="activity-info">
+                    <span class="activity-title">The Statue of Liberty</span>
+                    <span class="activity-description">Here is a great description of this...</span>
+                    <div class="activity-highlights">
+                        <span class="activity-highlight"><img src="images/clock.png" class="highlight-icon"/>2 hours</span>
+                        <span>$ 20</span>
+                        <span class="activity-highlight"><img src="images/location_pin.png" class="highlight-icon"/>Location</span>
+                    </div>
+                </div>
+                <img src="images/rectangle_50.png" class="activity-img"/>
+            </div>
+            <div class="activity-item">
+                <div class="activity-info">
+                    <span class="activity-title">The Statue of Liberty</span>
+                    <span class="activity-description">Here is a great description of this...</span>
+                    <div class="activity-highlights">
+                        <span class="activity-highlight"><img src="images/clock.png" class="highlight-icon"/>2 hours</span>
+                        <span>$ 20</span>
+                        <span class="activity-highlight"><img src="images/location_pin.png" class="highlight-icon"/>Location</span>
+                    </div>
+                </div>
+                <img src="images/rectangle_50.png" class="activity-img"/>
+            </div>
+    </div>
+
+</body>
+</html>
