@@ -3,21 +3,57 @@ body{
     background-color: white;
 
 }
-.header {
-    background-color:rgba(91, 192, 235, 1);
-	height:136px;
 
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    padding: 1rem;
-}
-.site-header-info {
-	width:20rem;
-	height:10rem;
+
+header {
 	display: flex;
-    align-items:center;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #5BC0EB;
+	height: 6em;
+	padding-right: 20px;
 }
+
+header ul {
+	list-style: none;
+	display: flex;
+}
+
+header ul li {
+	margin: 0 4em;
+}
+
+header ul li a {
+	text-decoration: none;
+	color: #333;
+}
+
+.nav-link.active::before {
+	content: ''; /* This is necessary for the pseudo-element to display */
+	position: absolute; /* Position it relative to its parent */
+	top: -2.5em; /* Align to the top of the link */
+	left: 0; /* Align to the left of the link */
+	right: 0; /* Align to the right of the link */
+	height: 10px; /* The thickness of the white bar */
+	background-color: white; /* The color of the bar */
+	z-index: 10; /* Ensure it's above the link text */
+}
+
+/* To position the pseudo-element correctly, the parent element needs to be positioned relative */
+.nav-link {
+	position: relative; /* This is necessary for absolute positioning inside */
+	display: inline-block; /* or block, depending on your layout */
+}
+
+.logo {
+	width: 15em;
+}
+
+
+.profile-icon {
+	width: 3em;
+}
+
 .site-logo {
     display: inline-block;
 	width:10rem;
