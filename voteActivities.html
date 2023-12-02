@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Harmony - Rank Activities</title>
+    <link rel="stylesheet" href="voteActivities.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="logo.png" alt="Trip Harmony Logo">
+        <ul>
+            <li><a href="#details">Trip Details</a></li>
+            <li><a href="#activities">Choose Activities</a></li>
+            <li><a href="#rank" class="nav-link active" >Rank Activities</a></li>
+            <li><a href="#itinerary">View Itinerary</a></li>
+            <li><a href="#budget">Trip Budget</a></li>
+        </ul>
+        <a href="#budget">
+            <img class="profile-icon" src="profile.png" alt="profile">
+        </a>
+    </header>
+
+    <div class="content-container">
+        <section id="rankings_section">
+            <h1 id="your_rankings_title">Your Rankings</h1>
+            <!-- Ranking items here -->
+            <div id="all_rankings">
+               <div class="ranked_activity">
+                   <div class="rank">
+                        <h1>#1</h1>
+                   </div>
+                   <div class="short_description">
+                        <h3>The Statue Of Liberty</h3>
+                        <p>Here is a description of this...</p>
+                       <ul class="activity_time_cost_score_details">
+                           <li class="time_description">2 hours</li>
+                           <li class="cost_description">$20</li>
+                           <li class="score_description">Score: 100%</li>
+                       </ul>
+                   </div>
+                   <div class="activity_image">
+                      <!-- <img class="activty-image" src="statue.jpg" alt="profile"> -->
+                   </div>
+               </div>
+                <div class="ranked_activity">
+                    <div class="rank">
+                        <h1>#1</h1>
+                    </div>
+                    <div class="short_description">
+                        <h3>The Statue Of Liberty</h3>
+                        <p>Here is a description of this...</p>
+                        <ul class="activity_time_cost_score_details">
+                            <li class="time_description">2 hours</li>
+                            <li class="cost_description">$20</li>
+                            <li class="score_description">Score: 100%</li>
+                        </ul>
+                    </div>
+                    <div class="activity_image">
+                        <!-- <img class="activty-image" src="statue.jpg" alt="profile"> -->
+                    </div>
+                </div>
+                <div class="ranked_activity">
+                    <div class="rank">
+                        <h1>#1</h1>
+                    </div>
+                    <div class="short_description">
+                        <h3>The Statue Of Liberty</h3>
+                        <p>Here is a description of this...</p>
+                        <ul class="activity_time_cost_score_details">
+                            <li class="time_description">2 hours</li>
+                            <li class="cost_description">$20</li>
+                            <li class="score_description">Score: 100%</li>
+                        </ul>
+                    </div>
+                    <div class="activity_image">
+                        <!-- <img class="activty-image" src="statue.jpg" alt="profile"> -->
+                    </div>
+                </div>
+                <div class="ranked_activity">
+                    <div class="rank">
+                        <h1>#1</h1>
+                    </div>
+                    <div class="short_description">
+                        <h3>The Statue Of Liberty</h3>
+                        <p>Here is a description of this...</p>
+                        <ul class="activity_time_cost_score_details">
+                            <li class="time_description">2 hours</li>
+                            <li class="cost_description">$20</li>
+                            <li class="score_description">Score: 100%</li>
+                        </ul>
+                    </div>
+                    <div class="activity_image">
+                        <!-- <img class="activty-image" src="statue.jpg" alt="profile"> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="activity-details">
+            <div> <!-- Description Container -->
+                <h1>Statue of Liberty</h1>
+                <center><p>Activity 5/10</p></center>
+                <div class="description_activity_image"></div>
+                <!--<img class="description_activity_image" src="statue.jpg" alt="activity image">-->
+            </div>
+            <!-- Activity detail items here -->
+            <div class="form-container">
+                <form action="/submit-your-form">
+                    <div class="input-group">
+                        <div class="half">
+                            <input type="text" placeholder="Cost Per Person">
+                        </div>
+                        <div class="half">
+                            <input type="text" placeholder="Duration">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Location">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Website">
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder="Description + why do you want to do this?"></textarea>
+                    </div>
+                    <!--
+                    <div class="input-group">
+                        <input type="submit" value="Submit">
+                    </div> -->
+                    <div class="clear"></div>
+                </form>
+            </div>
+
+            <div class="vote_container">
+                <h3>Rank how excited you are to do this on your trip!</h3>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="100" class="slider" id="myRange">
+                </div>
+                <p>100% I want to do this!</p>
+            </div>
+
+            <div class="activity_view_buttons">
+                <button class="view_buttons">Previous</button>
+                <button class="view_buttons">Next</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
