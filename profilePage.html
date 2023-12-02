@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Profile - TripHarmony</title>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="profilePage.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="logo.png" alt="Trip Harmony Logo">
+        <ul>
+            <li><a href="#details">Trip Details</a></li>
+            <li><a href="#activities" class="nav-link active">Choose Activities</a></li>
+            <li><a href="#rank">Rank Activities</a></li>
+            <li><a href="#itinerary">View Itinerary</a></li>
+            <li><a href="#budget">Trip Budget</a></li>
+        </ul>
+        <a href="#budget">
+            <img class="profile-icon" src="profile.png" alt="profile">
+        </a>
+    </header>
+
+    <div class="BottomHalf"></div>
+
+    <div class="MiddleContainer">
+        <div class="LeftHalf">
+            <div class="ProfilePicture"></div>
+            <input type="text" id="nameTextbox" class="TextBox" placeholder="Name">
+            <input type="text" id="phoneTextbox" class="TextBox" placeholder="Phone Number">
+            <input type="text" id="emergencyTextbox" class="TextBox" placeholder="Emergency Contact">
+        </div>
+        <div class="RightHalf">
+            <div class="YourBudget">Your Budget</div>
+            <div class="SliderContainer">
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="3000" value="100" class="slider" id="myRange">
+                </div>
+                <div class="SliderText">This will be hidden from the group</div>
+            </div>
+            <div class="NotesText">Notes:</div>
+            <textarea class="NotesTextbox" ></textarea>
+        </div>
+    </div>
+
+</body>
+</html>
