@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trip Harmony - Rank Activities</title>
-    <link rel="stylesheet" href="voteActivities.css">
+    <link rel="stylesheet" href="../static/css/voteActivities.css">
 </head>
 <body>
     <header>
-        <img class="logo" src="logo.png" alt="Trip Harmony Logo">
+        <img class="logo" src="../static/images/logo.png" alt="Trip Harmony Logo">
         <ul>
-            <li><a href="#details">Trip Details</a></li>
-            <li><a href="#activities">Choose Activities</a></li>
-            <li><a href="#rank" class="nav-link active" >Rank Activities</a></li>
-            <li><a href="#itinerary">View Itinerary</a></li>
+            <li><a href="{{ url_for('tripDetails') }}">Trip Details</a></li>
+            <li><a href="{{ url_for('chooseActivities') }}">Choose Activities</a></li>
+            <li><a href="{{ url_for('voteItinerary') }}" class="nav-link active">Rank Activities</a></li>
+            <li><a href="{{ url_for('viewItinerary') }}">View Itinerary</a></li>
             <li><a href="#budget">Trip Budget</a></li>
         </ul>
-        <a href="#budget">
-            <img class="profile-icon" src="profile.png" alt="profile">
+        <a href="{{ url_for('profilePage') }}">
+            <img class="profile-icon" src="../static/images/profile.png" alt="profile">
         </a>
     </header>
 

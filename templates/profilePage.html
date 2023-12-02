@@ -4,20 +4,20 @@
     <meta charset="utf-8">
     <title>Profile - TripHarmony</title>
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="profilePage.css">
+    <link rel="stylesheet" href="../static/css/profilePage.css">
 </head>
 <body>
     <header>
-        <img class="logo" src="logo.png" alt="Trip Harmony Logo">
+        <img class="logo" src="../static/images/logo.png" alt="Trip Harmony Logo">
         <ul>
-            <li><a href="tripDetails.html">Trip Details</a></li>
-            <li><a href="chooseActivities.html" >Choose Activities</a></li>
-            <li><a href="voteActivities.html">Rank Activities</a></li>
-            <li><a href="viewIninerary.html">View Itinerary</a></li>
-            <li><a href="budget">Trip Budget</a></li>
+            <li><a href="{{ url_for('tripDetails') }}">Trip Details</a></li>
+            <li><a href="{{ url_for('chooseActivities') }}">Choose Activities</a></li>
+            <li><a href="{{ url_for('voteItinerary') }}" >Rank Activities</a></li>
+            <li><a href="{{ url_for('viewItinerary') }}" >View Itinerary</a></li>
+            <li><a href="#budget">Trip Budget</a></li>
         </ul>
-        <a href="#budget">
-            <img class="nav-link active" src="profile.png" alt="profile">
+        <a href="{{ url_for('profilePage') }}">
+            <img class="nav-link active" src="../static/images/profile.png" alt="profile">
         </a>
     </header>
 
